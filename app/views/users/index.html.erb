@@ -1,0 +1,22 @@
+<h3>Users</h3>
+
+<div align="right" display="inline">
+<table class="table1" width="100%" >
+<tr>
+ <th><center>ID</center></th>
+    <th><center>Name</center></th>
+    <th><center>Email </center></th>
+<th><center>Cellphone </center></th>
+  </tr>
+<% @users.each do |p| %>
+    <tr>
+      <td><center><%= p.id %></center></td>
+      <td><center><%= p.name %></center></td>
+      <td><center><%= p.email %></center></td>
+	<td><center><%= p.cellphone%></center></td>          
+ 
+<td>
+    </tr>
+ <% end %>
+</table>
+</div>
